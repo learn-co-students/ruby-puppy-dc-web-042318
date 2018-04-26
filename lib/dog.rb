@@ -1,10 +1,6 @@
-require 'pry'
-
 class Dog
-
   attr_accessor :name
   @@all = []
-
   def initialize(name)
     @name = name
     @@all << self
@@ -13,9 +9,8 @@ class Dog
   def self.all
     @@all.each { |d| puts d.name }
   end
-  
+
   def self.clear_all
     @@all.clear
   end
-
 end
